@@ -15,7 +15,7 @@ def preprocess(text):
     text = text.replace(')', ' <RIGHT_PAREN> ')
     text = text.replace('--', ' <HYPHENS> ')
     text = text.replace('?', ' <QUESTION_MARK> ')
-    # text = text.replace('\n', ' <NEW_LINE> ')
+    text = text.replace('\n', ' <NEW_LINE> ')
     text = text.replace(':', ' <COLON> ')
     words = text.split()
     
